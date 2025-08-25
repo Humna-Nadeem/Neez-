@@ -23,9 +23,9 @@ export default function Footer() {
         <div className="footer-main">
           <div className="footer-section contact-us">
             <h4>Contact Us</h4>
-            <p><HiOutlineLocationMarker /> 21 Km Ferozpur Road Lahore</p>
-            <p><HiOutlineMail /> neez@nishatmills.com</p>
-            <p><BsTelephone /> +92 42 111 647 428</p>
+            <p><HiOutlineLocationMarker /> Hayatabad</p>
+            <p><HiOutlineMail /> neez@.com</p>
+            <p><BsTelephone /> +923219733749</p>
           </div>
 
           <div className="footer-section information">
@@ -35,34 +35,15 @@ export default function Footer() {
             <p>Privacy Policy</p>
           </div>
 
-          <div className="footer-section newsletter">
-            <h4>Newsletter Signup</h4>
-            <p>Subscribe to our newsletter and get latest updates.</p>
-            <div className="newsletter-input">
-              <input type="email" placeholder="Your email address" />
-              <button>Subscribe</button>
-            </div>
-            <div className="social-icons">
-              <FaFacebookF className="social-icon facebook" />
-              <FaInstagram className="social-icon instagram" />
-              <FaYoutube className="social-icon youtube" />
-            </div>
-          </div>
+          
         </div>
 
-        {/* Footer Bottom */}
-        <div className="footer-bottom">
-          <p className="brand-bar">Copyright © 2025 Neez. All rights reserved.</p>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png"
-            alt="Visa"
-          />
-        </div>
+       
       </footer>
 
       {/* WhatsApp Floating Icon */}
       <a
-        href="https://wa.me/923001234567"
+        href="https://wa.me/923219733749"
         className="whatsapp-float"
         target="_blank"
         rel="noopener noreferrer"

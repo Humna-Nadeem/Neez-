@@ -1,4 +1,3 @@
-
 .women-section {
   text-align: center;
   padding: 50px 0;
@@ -9,9 +8,7 @@
   #dcdcdc 65%,      
   #1a1a1a 100%       
 );
-
-
-  
+  animation: fadeInSection 1.2s ease-in-out; /* added fade-in */
 }
 
 .women-heading {
@@ -35,7 +32,7 @@
 
 .women-card img {
   width: 140px;
-  height: 140px;
+  height: 130px;
   border-radius: 50%;
   object-fit: cover;
   transition: transform 0.4s ease, filter 0.4s ease;
@@ -101,6 +98,18 @@
 
   .women-card img {
     width: 110px;
-    height: 110px;
+    height: 110px;
+  }
 }
+
+/* Fade In Animation */
+@keyframes fadeInSection {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -15,9 +15,9 @@
 
 .womankep-card {
   position: relative;
-  background: #fff;
+  background:black;
   border: 1px solid #eee;
-  border-radius: 10px;
+  border-radius: 6px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
@@ -96,7 +96,7 @@
 .womankep-info .title {
   font-size: 14px;
   font-weight: 500;
-  color: #333;
+  color: #f4f1f1;
   margin-bottom: 5px;
   line-height: 1.4;
 }
@@ -110,7 +110,7 @@
 .womankep-info .price {
   font-size: 14px;
   font-weight: bold;
-  color: black;
+  color: gray ;
 }
 
 /* Responsive */

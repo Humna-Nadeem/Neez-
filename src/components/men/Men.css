@@ -1,4 +1,3 @@
-
 .men-section {
   text-align: center;
   padding: 50px 0;
@@ -9,13 +8,13 @@
   #dcdcdc 65%,      
   #1a1a1a 100%      
 );
-
+  animation: fadeInSection 1.2s ease-in-out; /* fade-in effect */
 }
 
 .men-heading {
   font-size: 24px;
   font-weight: bold;
-  color:black; 
+  color: black; 
   margin-bottom: 30px;
 }
 
@@ -46,7 +45,6 @@
   font-weight: 500;
   color: #444;
 }
-
 
 .men-card:hover img {
   transform: scale(1.08);
@@ -81,7 +79,6 @@
   }
 }
 
-
 @media (max-width: 480px) {
   .men-categories {
     flex-direction: column;
@@ -96,6 +93,18 @@
 
   .men-card img {
     width: 110px;
-    height: 110px;
+    height: 110px;
+  }
 }
+
+
+@keyframes fadeInSection {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
