@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.ccc p {
+  padding: 15px;
+  font-size: 13px;
+  text-align: center;
+  color: #e0e0e0;                  /* light gray text */
+  background: #1a1a1a;             /* dark background */
+  border-top: 1px solid #333;      /* subtle separation */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4); 
+}
+
+.href {
+  font-size: 13px;
+  text-align: center;
+  color: #f54242;                  /* red link */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.href:hover {
+  color: rgb(245, 217, 60);        /* golden hover */
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .ccc p {
+    font-size: 12px;
+    padding: 14px;
+  }
+  .href {
+    font-size: 12px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .ccc p {
+    font-size: 11px;
+    padding: 12px;
+    color: #f5f5f5;                 /* make text brighter */
+  }
+  .href {
+    font-size: 11px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .ccc p {
+    font-size: 10px;
+    padding: 10px;
+    color: #ffffff;                 /* pure white text */
+  }
+  .href {
+    font-size: 10px;
+  }
+}

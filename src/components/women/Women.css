@@ -1,0 +1,106 @@
+
+.women-section {
+  text-align: center;
+  padding: 50px 0;
+  background: linear-gradient(
+  180deg,
+  #000000 0%,       
+  #f5f5f5 35%,      
+  #dcdcdc 65%,      
+  #1a1a1a 100%       
+);
+
+
+  
+}
+
+.women-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: black; 
+  margin-bottom: 30px;
+}
+
+.women-categories {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.women-card {
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.women-card img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.women-card p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Hover Effects */
+.women-card:hover img {
+  transform: scale(1.08);
+  filter: brightness(0.85);
+}
+
+.women-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ========== Responsive Styles ========== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .women-categories {
+    gap: 30px;
+  }
+
+  .women-card img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Mobile: 2 per row */
+@media (max-width: 768px) {
+  .women-categories {
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .women-card {
+    flex: 1 1 40%; /* two per row */
+    max-width: 180px;
+  }
+}
+
+/* Small Mobile: 1 per row */
+@media (max-width: 480px) {
+  .women-categories {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .women-card {
+    flex: none;
+    max-width: 100%;
+  }
+
+  .women-card img {
+    width: 110px;
+    height: 110px;
+}
+}
