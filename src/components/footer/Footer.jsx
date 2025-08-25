@@ -38,10 +38,12 @@ export default function Footer() {
           
         </div>
 
+
+
        
       </footer>
 
-      {/* WhatsApp Floating Icon */}
+  
       <a
         href="https://wa.me/923219733749"
         className="whatsapp-float"
