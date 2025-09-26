@@ -28,7 +28,7 @@ export default function Maincards() {
                 <p>LUXURY</p></div>
              </Link>
              <Link to="/thirdsction">
-                <div className='wo'><img src={men2} alt="" />
+                <div className='wooo'><img src={men2} alt="" />
                 <p>LUXURY MEN</p></div>
             </Link>
                 </div>

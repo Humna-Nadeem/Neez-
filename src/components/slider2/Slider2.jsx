@@ -7,6 +7,7 @@ import w2img from "../imgs/w2img.jpg";
 import w3img from "../imgs/w3img.jpg";
 import w4img from "../imgs/w4img.jpg";
 import w5img from "../imgs/w5img.jpg";
+
 import w6img from "../imgs/w6img.jpg";
 import w7img from "../imgs/w7img.jpg";
 import w8img from "../imgs/w8img.jpg";
@@ -20,15 +21,17 @@ export default function Slider2() {
     { src: w3img, title: "Endless Summer" },
     { src: w4img, title: "Unstitched Glow" },
     { src: w5img, title: "Pret Story" },
+    { src: w10img, title: "Festive Edit" },
     { src: w6img, title: "Men's Club" },
     { src: w7img, title: "Luxury Line" },
     { src: w8img, title: "Summer Collection" },
     { src: w9img, title: "Casual Wear" },
     { src: w10img, title: "Festive Edit" },
+    { src: w1img, title: "Shop By Concept" },
   ];
 
   // Two slides: 5 images each
-  const slides = [images.slice(0, 5), images.slice(5, 10)];
+  const slides = [images.slice(0, 6), images.slice(6, 12)];
 
   return (
     <div className="custom-slider2-container">

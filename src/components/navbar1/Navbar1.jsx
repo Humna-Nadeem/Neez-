@@ -37,6 +37,8 @@ export default function Navbar1() {
         {/* Always visible logo */}
         <div className="navbar-img">
           <img src={logo} alt="Logo" />
+          
+          
         </div>
 
         {/* Hide icons when sidebar open */}

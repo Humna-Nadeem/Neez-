@@ -4,18 +4,17 @@
   gap: 25px;
   padding: 40px;
   background: linear-gradient(
-  180deg,
-  #000000 0%,       
-  #f5f5f5 35%,   
-  #dcdcdc 65%,     
-  #1a1a1a 100%      
-);
-
+    180deg,
+    #000000 0%,       
+    #f5f5f5 35%,   
+    #dcdcdc 65%,     
+    #1a1a1a 100%      
+  );
 }
 
 .womankep-card {
   position: relative;
-  background:black;
+  background: black;
   border: 1px solid #eee;
   border-radius: 6px;
   overflow: hidden;
@@ -60,28 +59,78 @@
   color: crimson;
 }
 
-.hover-overlay {
+/* ✅ Hover Overlay */
+.hover-overlayy {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end; /* Start button at bottom */
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+  padding-bottom: 20px;
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.05);
+  filter: blur(1.5px); /* ✅ Blur effect */
+}
+
+.image-wrapper:hover .hover-overlayy {
+  opacity: 1;
+}
+
+/* ✅ Add-to-cart Button */
+.hover-overlayy {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-
+  align-items: center;   /* ✅ Center vertically */
+  justify-content: center; /* ✅ Center horizontally */
+  background: rgba(0, 0, 0, 0.4);
   opacity: 0;
   transition: opacity 0.4s ease;
   z-index: 1;
 }
 
-.image-wrapper:hover img {
-
-  transform: scale(1.05);
+.add-to-cart-btnn {
+  background: rgb(26, 25, 25);
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transform: translateY(40px);  /* Start slightly below center */
+  opacity: 0;
+  transition: all 0.4s ease;
 }
 
-.image-wrapper:hover .hover-overlay {
+.image-wrapper:hover .add-to-cart-btnn {
+  transform: translateY(0);  /* ✅ Slide into center */
   opacity: 1;
+}
+
+
+.image-wrapper:hover .add-to-cart-btnn {
+  transform: translateY(0);  /* Slide up */
+  opacity: 1;
+}
+
+.add-to-cart-btnn:hover {
+  background: darkred;
 }
 
 .womankep-info {
@@ -110,7 +159,7 @@
 .womankep-info .price {
   font-size: 14px;
   font-weight: bold;
-  color: gray ;
+  color: gray;
 }
 
 /* Responsive */

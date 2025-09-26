@@ -86,7 +86,7 @@
 /* Small Mobile: 1 per row */
 @media (max-width: 480px) {
   .women-categories {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 20px;
   }

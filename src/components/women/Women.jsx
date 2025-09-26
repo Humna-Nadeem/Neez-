@@ -3,7 +3,6 @@ import "./Women.css";
 
 import women11 from "../imgs/women11.jpg";
 import women0 from "../imgs/women0.jpg";
-import women1 from "../imgs/women1.jpg";
 import women2 from "../imgs/women2.jpg";
 
 const Women = () => {

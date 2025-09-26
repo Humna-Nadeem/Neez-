@@ -28,30 +28,6 @@ const Menkep = () => {
     { id: 10, img: mkap10, title: "Surprise - Printed Suit", type: "UNSTITCHED", price: "Rs. 5,690" },
     { id: 11, img: mkap11, title: "Surprise - Printed Suit", type: "UNSTITCHED", price: "Rs. 6,190" },
     { id: 12, img: mkap12, title: "Surprise - Printed Suit", type: "UNSTITCHED", price: "Rs. 4,790" },
-     { id: 1, img: mkap1, title: "Digital Printed Suit - 42502243", type: "UNSTITCHED", price: "Rs. 6,490" },
-    { id: 2, img: mkap2, title: "3 Piece - Printed Suit - 42502198", type: "UNSTITCHED", price: "Rs. 5,990" },
-    { id: 3, img: mkap3, title: "3 Piece - Printed Suit - 42502193", type: "UNSTITCHED", price: "Rs. 5,990" },
-    { id: 4, img: mkap4, title: "2 Piece - Printed Suit - 42502168", type: "UNSTITCHED", price: "Rs. 3,490" },
-    { id: 5, img: mkap5, title: "Surprise - Printed Suit", type: "UNSTITCHED", price: "Rs. 4,990" },
-    { id: 6, img: mkap6, title: "Surprise - Printed Suit", type: "UNSTITCHED", price: "Rs. 5,490" },
-    { id: 7, img: mkap7, title: "Surprise - Printed Suit", type: "UNSTITCHED", price: "Rs. 3,990" },
-    { id: 8, img: mkap8, title: "Surprise - Printed Suit", type: "UNSTITCHED", price: "Rs. 6,990" },
-    { id: 9, img: mkap9, title: "Surprise - Printed Suit", type: "UNSTITCHED", price: "Rs. 4,490" },
-    { id: 10, img: mkap10, title: "Surprise - Printed Suit", type: "UNSTITCHED", price: "Rs. 5,690" },
-    { id: 11, img: mkap11, title: "Surprise - Printed Suit", type: "UNSTITCHED", price: "Rs. 6,190" },
-    { id: 12, img: mkap12, title: "Surprise - Printed Suit", type: "UNSTITCHED", price: "Rs. 4,790" },
-     { id: 1, img: mkap1, title: "Digital Printed Suit - 42502243", type: "UNSTITCHED", price: "Rs. 6,490" },
-    { id: 2, img: mkap2, title: "3 Piece - Printed Suit - 42502198", type: "UNSTITCHED", price: "Rs. 5,990" },
-    { id: 3, img: mkap3, title: "3 Piece - Printed Suit - 42502193", type: "UNSTITCHED", price: "Rs. 5,990" },
-    { id: 4, img: mkap4, title: "2 Piece - Printed Suit - 42502168", type: "UNSTITCHED", price: "Rs. 3,490" },
-    { id: 5, img: mkap5, title: "Surprise - Printed Suit", type: "UNSTITCHED", price: "Rs. 4,990" },
-    { id: 6, img: mkap6, title: "Surprise - Printed Suit", type: "UNSTITCHED", price: "Rs. 5,490" },
-    { id: 7, img: mkap7, title: "Surprise - Printed Suit", type: "UNSTITCHED", price: "Rs. 3,990" },
-    { id: 8, img: mkap8, title: "Surprise - Printed Suit", type: "UNSTITCHED", price: "Rs. 6,990" },
-    { id: 9, img: mkap9, title: "Surprise - Printed Suit", type: "UNSTITCHED", price: "Rs. 4,490" },
-    { id: 10, img: mkap10, title: "Surprise - Printed Suit", type: "UNSTITCHED", price: "Rs. 5,690" },
-    { id: 11, img: mkap11, title: "Surprise - Printed Suit", type: "UNSTITCHED", price: "Rs. 6,190" },
-    { id: 12, img: mkap12, title: "Surprise - Printed Suit", type: "UNSTITCHED", price: "Rs. 4,790" },
   ];
 
   return (
@@ -62,7 +38,7 @@ const Menkep = () => {
           <div className="men-image-wrapper">
             <img src={item.img} alt={item.title} />
             <div className="men-hover-overlay">
-              
+              <button className="men-add-to-cart-btn">Add to Cart</button>
             </div>
             <FaRegHeart className="heart-icon" />
           </div>

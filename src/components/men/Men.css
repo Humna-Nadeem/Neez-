@@ -81,7 +81,7 @@
 
 @media (max-width: 480px) {
   .men-categories {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 20px;
   }
