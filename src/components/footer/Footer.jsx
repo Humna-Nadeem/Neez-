@@ -44,7 +44,7 @@ export default function Footer() {
         <div className="footer-section contact-us">
           <h4>Contact Us</h4>
           <p><HiOutlineLocationMarker /> 21 Km Ferozpur Road Lahore</p>
-          <p><HiOutlineMail /> nishatonline@nishatmills.com</p>
+          <p><HiOutlineMail /> neez@gmail.com</p>
           <p><BsTelephone /> +92 42 111 647 428</p>
         </div>
 
@@ -60,13 +60,13 @@ export default function Footer() {
           <h4>Customer Services</h4>
           <p>FAQs</p>
           <p>Order Tracking</p>
-          
+    
           <p>Return & Exchange Policy</p>
         </div>
 
         <div className="footer-section newsletter">
           <h4>Newsletter Signup</h4>
-          <p>Subscribe to our newsletter and get latest updates.</p>
+          <p>Subscribe to our newsletter to get latest updates.</p>
           <div className="newsletter-input">
             <input type="email" placeholder="Your email address" />
             <button>Subscribe</button>

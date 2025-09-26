@@ -104,7 +104,7 @@ background: linear-gradient(
 }
 
 .newsletter-input button {
-  padding: 8px 16px;
+  padding: 6px 12px;
   background-color: #333;
   color: #fff;
   border: none;
@@ -167,4 +167,26 @@ background: linear-gradient(
   .footer-top { flex-direction: column; align-items: flex-start; gap: 20px; }
   .social-icons { margin-left: 0; }
   .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
+}
+/* Extra Small Screens Fix */
+@media (max-width: 600px) {
+  /* Make newsletter input + button stack properly */
+  .newsletter-input {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .newsletter-input input,
+  .newsletter-input button {
+    width: 100%;
+    margin: 4px 0;
+  }
+
+  /* Fix newsletter description text */
+  .newsletter p {
+    font-size: 12px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    max-width: 100%;
+  }
 }
