@@ -7,7 +7,7 @@
 background: linear-gradient(
   180deg,
   #000000 0%,       
-  #f5f5f5 35%,      
+  #636262 35%,      
   #dcdcdc 65%,      
   #1a1a1a 100%    
 );
@@ -36,20 +36,28 @@ background: linear-gradient(
 .topimg {
     width: 32% !important;
 }
-.images3 {
-    display: flex;
-    text-align: center;
-    gap: 30px !important;
-    transform: translateY(-6px);
-}
 
 .images2 img {
     width: 106%;
 }
+.images3 {
+  display: flex;
+  justify-content: space-between; /* equal spacing */
+  align-items: center;
+  gap: 12px; /* gap between items */
+  padding: 0 18px; /* space from left & right */
+  text-align: center;
+}
+
+.images3 div {
+  flex: 1; /* all children take equal space */
+}
 
 .images3 img {
-    width: 114.5%;
-      height: 34vh !important;
+  width: 100%; /* fit container equally */
+  height: 34vh;
+  object-fit: cover; /* keeps proportions nicely */
+ 
 }
 
 .main-images p {
@@ -60,23 +68,15 @@ background: linear-gradient(
     display: flex;
     text-align: center;
     gap: 22px;
+     padding: 0 15px; /* space from left & right */
 }
 
-.card4imgg {
-    transform: translate(-518px, -2905x); 
-    width: 278px;
-      height: 29vh !important;
-}
-
-.card4imgg img {
-    width: 82%;
-}
 
 .imgdiv1 img {
-    width: 103%;
+    width: 99%;
+    height: 85vh;
 }
 .new img {
-  
   height: 34vh !important;
   width: 600px !important;   
   object-fit: cover;         
@@ -84,15 +84,17 @@ background: linear-gradient(
 }
 .STITCHED{
     width: 60% !important;
+  
 }
 .wooo img{
-    height: 38vh !important;
-    width: 200px !important;   
+    height: 37vh !important;
+    width: 277px !important;   
   object-fit: cover;        
   display: block;
 }
 .imgg2 img{
     width: 95% !important;
+   height: 85vh;
 }
 
 .main-images img,
@@ -144,11 +146,12 @@ background: linear-gradient(
   .images3 img,
   .card4imgg img,
   .imgdiv1 img,
-  .imgg2 img
+  .imgg2 img,
+  .topimg img
   
    {
     width: 100% !important;
-    max-width: 300px !important;   /* ✅ fixed square width */
+    max-width: 350px !important;   /* ✅ fixed square width */
     height: 280px !important;      /* ✅ fixed square height */
     object-fit: cover;             /* crop neatly */
     display: block;
@@ -158,7 +161,7 @@ background: linear-gradient(
   .new img,
   .wooo img {
     width: 100% !important;
-    max-width: 300px !important;
+    max-width: 350px !important;
     height: 280px !important;
     object-fit: cover;
   }
@@ -197,7 +200,7 @@ background: linear-gradient(
   .wooo,
   .imgg2 {
     width: 100% !important;
-    max-width: 300px;   /* ✅ matches image size */
+    max-width: 350px;   /* ✅ matches image size */
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -22,6 +22,10 @@ export default function Maincards() {
             <p>UNSTITCHED</p></div>
             </Link>
             <div className='images2'>
+
+
+
+                
                 <div className="topimg">
              <Link to="/secondsection">
                 <div><img src={mc6img} alt="" />
@@ -56,12 +60,12 @@ export default function Maincards() {
              <div className='new'><img src={mkap3} alt="" />
                     <p>FREEDOM TO BUY</p></div>
                 </Link>
-            </div>
             <Link to="/secondsection">
             <div className='card4imgg'><img src={mc2img} alt="" />
             <p>PRET</p></div>
             </Link>
-           
+
+            </div>
         </div>
 
     </div>
